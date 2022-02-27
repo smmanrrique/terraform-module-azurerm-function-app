@@ -4,10 +4,6 @@ variable "FUNCTION_APP_NAME" {
 }
 
 
-variable "APPLICATION_INSIGHTS_NAME" {
-  type        = string
-  description = "Application insights name"
-}
 
 
 variable "RESOURCE_GROUP_NAME" {

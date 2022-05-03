@@ -9,6 +9,10 @@ resource "azurerm_function_app" "function_app" {
   os_type                    = "linux"
   version                    = "~3"
   tags                       = var.TAGS
+  identity {
+     type = "SystemAssigned"
+  }
+
 
   app_settings = var.APP_SETTINGS
 
